@@ -4,6 +4,7 @@ num = int(input("Под какое количество патронов обо�
 real_bullets = int(input("Сколько патронов в обойме?: "))
 bullets = [0 for i in range(num-real_bullets)]
 bullets += [1 for j in range(real_bullets)]
+print(bullets)
 
 a = int(input("Точно хочешь сыграть? Если да, то напиши 1, а если нет, то 0: "))
 
