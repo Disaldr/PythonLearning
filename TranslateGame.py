@@ -7,7 +7,27 @@ while True:
     if key == "stop":
         break
 
-        value = input("Введите его перевод или Stop: ").title()
-        if value == "Stop"
-            break
-        dictionary[key] = value
+    value = input("Введите его перевод или Stop: ").title()
+    if value == "Stop":
+        break
+    dictionary[key] = value
+
+dictionary = list(disctionary.items())
+random.shuffle(dictionary)
+dictionary = dict(dictionary)
+print("Сосредоточься, дыши нормально, включи голову и сдай этот тест")
+
+scores = 0
+error = 0
+
+for key, value in dictionary.items():
+    translation = input("Введи перевод слова " + key + ": ").title()
+    if translation == value:
+        scores +=1
+    else:
+        error +=1
+
+print(scores)
+    if error == 3:
+        break
+print("У тебя 3 ошибки.Отдохни и попробуй позже еще раз")
