@@ -26,8 +26,7 @@ for key, value in dictionary.items():
         scores +=1
     else:
         error +=1
-
-print(scores)
     if error == 3:
         break
 print("У тебя 3 ошибки.Отдохни и попробуй позже еще раз")
+print(scores)
